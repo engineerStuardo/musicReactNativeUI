@@ -14,6 +14,7 @@ import MusicPlayer from './src/component/MusicPlayer';
 const App = () => {
   return (
     <View style={{flex: 1}}>
+      <StatusBar barStyle="ligth-content" />
       <MusicPlayer />
     </View>
   );

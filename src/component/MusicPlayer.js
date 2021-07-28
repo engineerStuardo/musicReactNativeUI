@@ -1,21 +1,54 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  Dimensions,
+  TouchableOpacity,
+} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Slider from '@react-native-community/slider';
 
+const {width, height} = Dimensions.get('window');
+
 const MusicPlayer = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Ionicons name="heart-outline" size={30} />
-      <Text>hello from music player component</Text>
-      <Slider
-        style={{width: 200, height: 40}}
-        minimumValue={0}
-        maximumValue={1}
-        minimumTrackTintColor="#FFFFFF"
-        maximumTrackTintColor="#000000"
-      />
-    </View>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#222831'}}>
+      <View
+        style={{
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}></View>
+      <View
+        style={{
+          borderTopColor: '#393E46',
+          borderTopWidth: 1,
+          width: width,
+          alignItems: 'center',
+          paddingVertical: 15,
+        }}>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            width: '80%',
+          }}>
+          <TouchableOpacity onPress={() => {}}>
+            <Ionicons name="heart-outline" size={30} color="#777777" />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {}}>
+            <Ionicons name="repeat" size={30} color="#777777" />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {}}>
+            <Ionicons name="share-outline" size={30} color="#777777" />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => {}}>
+            <Ionicons name="ellipsis-horizontal" size={30} color="#777777" />
+          </TouchableOpacity>
+        </View>
+      </View>
+    </SafeAreaView>
   );
 };
 
