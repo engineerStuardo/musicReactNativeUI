@@ -1,15 +1,7 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {StatusBar, View} from 'react-native';
 
-import MusicPlayer from './src/component/MusicPlayer';
+import MusicPlayer from './src/screens/MusicPlayer';
 
 const App = () => {
   return (

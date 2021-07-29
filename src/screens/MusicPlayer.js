@@ -1,12 +1,14 @@
 import React, {useState, useRef, useEffect} from 'react';
-import {View, SafeAreaView, Dimensions, Image, Animated} from 'react-native';
+import {View, SafeAreaView, Dimensions, Animated} from 'react-native';
 
-import MenuBottom from './MenuBottom';
-import MenuOptions from './MenuOptions';
-import Time from './Time';
-import Slider from './Slider';
-import InfoSongs from './InfoSongs';
-import ListSongs from './ListSongs';
+import {
+  MenuBottom,
+  MenuOptions,
+  Time,
+  Slider,
+  InfoSongs,
+  ListSongs,
+} from '../component/index';
 
 import songs from '../model/data';
 
