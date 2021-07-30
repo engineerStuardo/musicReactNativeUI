@@ -1,27 +1,17 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
+
+import {TextStyled} from '../styles/InfoSongsStyles';
 
 const InfoSongs = ({title, artist}) => {
   return (
     <View>
-      <Text
-        style={{
-          fontSize: 18,
-          fontWeight: '700',
-          textAlign: 'center',
-          color: '#EEEEEE',
-        }}>
+      <TextStyled size={18} weight={700}>
         {title}
-      </Text>
-      <Text
-        style={{
-          fontSize: 16,
-          fontWeight: '200',
-          textAlign: 'center',
-          color: '#EEEEEE',
-        }}>
+      </TextStyled>
+      <TextStyled size={16} weight={200}>
         {artist}
-      </Text>
+      </TextStyled>
     </View>
   );
 };

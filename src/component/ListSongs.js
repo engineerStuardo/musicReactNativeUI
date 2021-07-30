@@ -1,11 +1,12 @@
 import React from 'react';
-import {View, Animated} from 'react-native';
+import {Animated} from 'react-native';
 
+import {ListSongsContainer} from '../styles/ListSongsStyles';
 import RenderSongs from './RenderSongs';
 
 const ListSongs = ({width, songs, songSlider, scrollX}) => {
   return (
-    <View style={{width: width}}>
+    <ListSongsContainer width={width}>
       <Animated.FlatList
         ref={songSlider}
         data={songs}
@@ -22,7 +23,7 @@ const ListSongs = ({width, songs, songSlider, scrollX}) => {
           {useNativeDriver: true},
         )}
       />
-    </View>
+    </ListSongsContainer>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, {useState, useRef, useEffect} from 'react';
-import {View, SafeAreaView, Dimensions, Image, Animated} from 'react-native';
+import {Dimensions, Animated} from 'react-native';
 
+import {SafeArea, MusicPlayerContainer} from '../styles/MusicPlayerStyles';
 import MenuBottom from './MenuBottom';
 import MenuOptions from './MenuOptions';
 import Time from './Time';
@@ -40,13 +41,8 @@ const MusicPlayer = () => {
   };
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#222831'}}>
-      <View
-        style={{
-          flex: 1,
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}>
+    <SafeArea>
+      <MusicPlayerContainer>
         <ListSongs
           width={width}
           songSlider={songSlider}
@@ -60,9 +56,9 @@ const MusicPlayer = () => {
         <Slider />
         <Time />
         <MenuOptions skipNext={skipNext} skipPrevious={skipPrevious} />
-      </View>
+      </MusicPlayerContainer>
       <MenuBottom width={width} />
-    </SafeAreaView>
+    </SafeArea>
   );
 };
 

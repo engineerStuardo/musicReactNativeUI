@@ -1,14 +1,11 @@
 import React from 'react';
 import Slider from '@react-native-community/slider';
 
+import {SliderStyled} from '../styles/SliderStyles';
+
 const SliderOption = () => {
   return (
-    <Slider
-      style={{
-        width: 350,
-        height: 40,
-        flexDirection: 'row',
-      }}
+    <SliderStyled
       value={10}
       minimumValue={0}
       maximumValue={100}

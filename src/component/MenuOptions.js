@@ -2,15 +2,11 @@ import React from 'react';
 import {View, TouchableOpacity} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+import {MenuOptionsContainer} from '../styles/MenuOptionsStyles';
+
 const MenuOptions = ({skipNext, skipPrevious}) => {
   return (
-    <View
-      style={{
-        flexDirection: 'row',
-        width: '60%',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}>
+    <MenuOptionsContainer>
       <TouchableOpacity onPress={skipPrevious}>
         <Ionicons name="play-skip-back-outline" size={35} color="#FFD369" />
       </TouchableOpacity>
@@ -20,7 +16,7 @@ const MenuOptions = ({skipNext, skipPrevious}) => {
       <TouchableOpacity onPress={skipNext}>
         <Ionicons name="play-skip-forward-outline" size={35} color="#FFD369" />
       </TouchableOpacity>
-    </View>
+    </MenuOptionsContainer>
   );
 };
 

@@ -1,17 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+
+import {TimeContainer, TextStyled} from '../styles/TimeStyles';
 
 const Time = () => {
   return (
-    <View
-      style={{
-        width: 340,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-      }}>
-      <Text style={{color: '#FFF'}}>0:00</Text>
-      <Text style={{color: '#FFF'}}>0:00</Text>
-    </View>
+    <TimeContainer>
+      <TextStyled>0:00</TextStyled>
+      <TextStyled>0:00</TextStyled>
+    </TimeContainer>
   );
 };
 
