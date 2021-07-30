@@ -9,6 +9,7 @@ import {
   InfoSongs,
   ListSongs,
 } from '../component/index';
+import {SafeArea, MusicPlayerContainer} from '../styles/MusicPlayerStyles';
 
 import songs from '../model/data';
 
