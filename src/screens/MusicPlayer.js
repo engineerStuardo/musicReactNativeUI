@@ -1,13 +1,14 @@
 import React, {useState, useRef, useEffect} from 'react';
 import {Dimensions, Animated} from 'react-native';
 
-import {SafeArea, MusicPlayerContainer} from '../styles/MusicPlayerStyles';
-import MenuBottom from './MenuBottom';
-import MenuOptions from './MenuOptions';
-import Time from './Time';
-import Slider from './Slider';
-import InfoSongs from './InfoSongs';
-import ListSongs from './ListSongs';
+import {
+  MenuBottom,
+  MenuOptions,
+  Time,
+  Slider,
+  InfoSongs,
+  ListSongs,
+} from '../component/index';
 
 import songs from '../model/data';
 
